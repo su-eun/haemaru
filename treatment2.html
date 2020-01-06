@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>해마루 이차진료동물병원</title>
+    <!-- noto sans 웹폰트 -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <!-- 공통css -->
+    <link rel="stylesheet" href="./css/treatment1.css">
+    <link rel="stylesheet" href="./css/treatment2.css">
+    <!-- pc css -->
+    <!-- tab css -->
+    <!-- mobile css -->
+    <!-- 제이쿼리 -->
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <!-- 이미지로드 -->
+    <script src="./js/imagesloaded.pkgd.min.js"></script>
+    <!-- 사용자 js -->
+    <script src="./js/sub.js"></script>
+    <!-- 카테고리 js -->
+    <script src="./js/category.js"></script>
+    <script src="./js/treatment.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav id="category">
+          <div class="nav_container">
+              <dl>
+                <dt><a href="#">진료예약/상담</a></dt>
+                <dd><a href="#">예약안내</a></dd>
+                <dd><a href="#">진료예약</a></dd>
+                <dd><a href="#">응급진료안내</a></dd>
+                <dd><a href="#">온라인상담</a></dd>
+              </dl>
+              <dl>
+                <dt><a href="#">진료안내</a></dt>
+                <dd><a href="./treatment1.html">진료시간</a></dd>
+                <dd><a href="./treatment2.html">진료과목</a></dd>
+              </dl>
+              <dl>
+                <dt><a href="#">의료진</a></dt>
+                <dd><a href="#">의료진소개</a></dd>
+              </dl>
+              <dl>
+                <dt><a href="#">병원소개</a></dt>
+                <dd><a href="#">병원소개</a></dd>
+                <dd><a href="#">구조 및 시설</a></dd>
+                <dd><a href="#">의료기기소개</a></dd>
+                <dd><a href="#">비지팅신청안내</a></dd>
+              </dl>
+              <dl>
+                <dt><a href="#">커뮤니티</a></dt>
+                <dd><a href="#">병원행사</a></dd>
+                <dd><a href="#">공지사항</a></dd>
+                <dd><a href="#">FAQ</a></dd>
+              </dl>
+              <dl>
+                <dt><a href="./map.html">오시는길</a></dt>
+                <dd><a href="./map.html">오시는길</a></dd>
+              </dl>
+              <dl>
+                <dt><a href="#">HAEMARU</a></dt>
+                <dd><a href="#">이차진료동물병원</a></dd>
+                <dd><a href="#">해마루솔루션</a></dd>
+                <dd><a href="#">소동물임상의학연구소</a></dd>
+              </dl>
+          </div>
+      </nav>
+      <div id="header_wrap">
+        <h1 id="logo">
+          <a href="./index.html">
+            <img src="./imgs/logo.png" alt="해마루로고">
+          </a>
+        </h1>
+        <nav id="gnb">
+          <ul class="depth1">
+            <li><a href="#">진료예약/상담</a>
+              <ul class="depth2">
+                <li><a href="#">예약안내</a></li>
+                <li><a href="#">진료예약</a></li>
+                <li><a href="#">응급진료안내</a></li>
+                <li><a href="#">온라인상담</a></li>
+              </ul>
+            </li>
+            <li><a href="#">진료안내</a>
+              <ul class="depth2">
+                <li><a href="./treatment1.html">진료시간</a></li>
+                <li><a href="./treatment2.html">진료과목</a></li>
+              </ul>
+            </li>
+            <li><a href="#">의료진</a>
+              <ul class="depth2">
+                <li><a href="#">의료진 소개</a></li>
+              </ul>
+            </li>
+            <li><a href="#">병원소개</a>
+              <ul class="depth2">
+                <li><a href="#">병원소개</a></li>
+                <li><a href="#">구조 및 시설</a></li>
+                <li><a href="#">의료기기소개</a></li>
+                <li><a href="#">비지팅 신청안내</a></li>
+              </ul>
+            </li>
+            <li><a href="#">커뮤니티</a>
+              <ul class="depth2">
+                <li><a href="#">병원행사</a></li>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </li>
+            <li><a href="./map.html">오시는길</a>
+              <ul class="depth2">
+                <li><a href="./map.html">오시는길</a></li>
+              </ul>
+            </li>
+            <li><a href="#">HAEMARU</a>
+              <ul class="depth2">
+                <li><a href="#">이차진료동물병원</a></li>
+                <li><a href="#">해마루솔루션</a></li>
+                <li><a href="#">소동물임상의학연구소</a></li>
+              </ul>
+            </li>
+          </ul><!-- end depth -->
+        </nav>
+        <div class="depth2_bg"></div>
+        <nav id="util">
+          <ul>
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">검색</a></li>
+            <li id="category_btn"><img src="./imgs/menu.png" alt="메뉴버튼이미지"></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    
+    <div class="container">
+      <div class="sub_menu_box">
+          <div class="main_banner">
+              <img src="./images/main_banner.jpg" alt="메인베너">
+          </div>
+
+          <ul class="sub_menu">
+              <li><a href="./treatment1.html">진료시간</a></li>
+              <li><a href="#">진료과목</a></li>
+          </ul>
+      </div>
+
+      <div class="sub_title">
+          <h1>진료 과목</h1>
+          <p>해마루 이차진료 동물병원의 진료과목을 안내해드립니다.</p>
+      </div>
+
+      <div class="treatmentwrap">
+          <div class="sub_menu2">
+              <ul>
+                  <li class="internal show">내과</li>
+                  <li class="surgery">외과</li>
+                  <li class="xray">영상의학과</li>
+                  <li class="emergency">응급중환자의료센터</li>
+              </ul>
+          </div>
+          <div class="treatment_list 01 show">
+              <div class="sub_banner">
+                  <h1>내과</h1>
+                  <p>해마루 이차진료 동물병원 내과에서는 지역 동물병원에서 원인이 파악되지 않은 환자를 높은 수준의 진단 장비와 경험이 풍부한 내과 전담 진료진을 통해 '정확하게 진단'하고, 특히 노령성·만성·난치성 중증 질환으로 고통받는 환자와 보호자에게 '최선의 치료'를 실시하고 있습니다. 자타가 공인하는 국내 최고의 경험과 실력을 갖춘 분과별 전문 의료진, 가장 정확한 진단을 가능하게 하는 체계적인 진단검사 시스템, 국내외 유수의 진단 기관들과의 협력체계, 끊임없는 연구와 최신의 임상적 시도, 무엇보다 환자 데이터와 축적된 진료 경험을 토대로 원인을 규명하고 원인에 맞는 최적의 치료 방법을 적용하기 위해 노력하고 있습니다.</p>
+              </div>
+              <ul class="list">
+                  <li class="s_slider 1">
+                      <img src="./images/internal1.jpg" alt="">               <h1>순환기내과</h1>
+                      <div class="hover">
+                          <div>
+                              <p>+</p>
+                          </div>
+                      </div>
+                  </li>
+                  <li  class="s_slider 2">
+                      <img src="./images/internal2.jpg" alt="">
+                      <h1>종양내과</h1>
+                      <div class="hover">
+                          <div>
+                              <p>+</p>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="s_slider 3">
+                      <img src="./images/internal3.jpg" alt="">
+                      <h1>소화기내과</h1>
+                      <div class="hover">
+                          <div>
+                              <p>+</p>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="s_slider 4">
+                      <img src="./images/internal4.jpg" alt="">
+                      <h1>고양이내과</h1>
+                      <div class="hover">
+                          <div>
+                              <p>+</p>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="s_slider 5">
+                      <img src="./images/internal5.jpg" alt="">
+                      <h1>당뇨 및 내분비내과</h1>
+                      <div class="hover">
+                          <div>
+                              <p>+</p>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="s_slider 6">
+                      <img src="./images/internal6.jpg" alt="">
+                      <h1>피부과</h1>
+                      <div class="hover">
+                          <div>
+                              <p>+</p>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="s_slider 7">
+                      <img src="./images/internal7.jpg" alt="">
+                      <h1>신경내과</h1>
+                      <div class="hover">
+                          <div>
+                              <p>+</p>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="s_slider 8">
+                      <img src="./images/internal8.jpg" alt="">
+                      <h1>혈액·면역내과</h1>
+                      <div class="hover">
+                          <div>
+                              <p>+</p>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="s_slider 9">
+                      <img src="./images/internal9.jpg" alt="">
+                      <h1>중재적시술</h1>
+                      <div class="hover">
+                          <div>
+                              <p>+</p>
+                          </div>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+
+          <div class="treatment_list 02">
+              <div class="sub_banner">
+                  <h1>외과</h1>
+                  <p>
+                      저희 해마루 동물병원 외과는 2014년 일반외과 443건, 정형신경외과 120건, 치과 104건, 안과 90건의 수술을, 2015년 일반외과 590건, 정형신경외과 125건, 안과 109건, 치과 199건의 수술을 진행하면서 다양하고 많은 경험을 갖고 있는 의료진들이 최선의 결과를 얻기위해 항상 노력하고 있습니다. 독립된 멸균 수술실과 가스 마취기, 인공호흡기, 각종 모니터링 장비와 전문 수술 기구들이 준비되어 있어 안전한 수술이 진행됩니다. 수술실은 수술 준비실과 별도의 멸균 수술실로 이루어져 외부에서 완전히 차단되어 위치하고 있어 수술 중의 환자 관리에 만전을 기하고 있습니다.
+                  </p>
+              </div>
+              <ul class="list">
+                  <li class="s_slider 10">
+                      <img src="./images/surgery1.jpg" alt="">
+                      <h1>일반외과</h1>
+                      <div class="hover">
+                          <div>
+                              <p>+</p>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="s_slider 11">
+                      <img src="./images/surgery2.jpg" alt="">
+                      <h1>흉부외과</h1>
+                      <div class="hover">
+                          <div>
+                              <p>+</p>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="s_slider 12">
+                      <img src="./images/surgery3.jpg" alt="">
+                      <h1>정형외과</h1>
+                      <div class="hover">
+                          <div>
+                              <p>+</p>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="s_slider 13">
+                      <img src="./images/surgery4.jpg" alt="">
+                      <h1>신경외과</h1>
+                      <div class="hover">
+                          <div>
+                              <p>+</p>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="s_slider 14">
+                      <img src="./images/surgery5.jpg" alt="">
+                      <h1>치과</h1>
+                      <div class="hover">
+                          <div>
+                              <p>+</p>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="s_slider 15">
+                      <img src="./images/surgery6.jpg" alt="">
+                      <h1>안과</h1>
+                      <div class="hover">
+                          <div>
+                              <p>+</p>
+                          </div>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+
+          <div class="treatment_list 03">
+              <div class="sub_banner">
+                  <h1>영상의학과</h1>
+                  <p>수의에서 영상의학은 환자의 상태와 교통할 수 있는 교두보로서 그 역할이 중요합니다. 즉, 인의와 달리 반려동물은 앓고 있는 질환의 증상을 정확하게 표현할 수 없기 때문에 진단과 치료에 있어 영상의학 분야의 역할이 더욱 중요하며, 해마루 동물병원 영상의학과는 최상의 진료와 연구 및 교육을 통해 성장하고자 노력하고 있습니다. 2016년 현재 해마루 동물병원 영상의학과에는 기본 방사선 장비 이외에도 최신 영상 기법을 수행할 수 있는 초음파 장비 2대와 16채널 전산화 단층 촬영기기를 보유하고 있습니다. 15년 이상 축적된 경험과 우수한 인적 자원, 그리고 최첨단 장비를 바탕으로 최상의 의료 서비스를 제공하고 있습니다.</p>
+              </div>
+              <ul class="list">
+                  <li class="s_slider 16">
+                      <img src="./images/xray1.jpg" alt="">
+                      <h1>방사선검사</h1>
+                      <div class="hover">
+                          <div>
+                              <p>+</p>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="s_slider 17">
+                      <img src="./images/xray2.jpg"alt="">
+                      <h1>초음파검사</h1>
+                      <div class="hover">
+                          <div>
+                              <p>+</p>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="s_slider 18">
+                      <img src="./images/xray3.jpg"alt="">
+                      <h1>컴퓨터단층촬영(CT)검사</h1>
+                      <div class="hover">
+                          <div>
+                              <p>+</p>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="s_slider 19">
+                      <img src="./images/xray4.jpg"alt="">
+                      <h1>최근영상기법</h1>
+                      <div class="hover">
+                          <div>
+                              <p>+</p>
+                          </div>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+
+          <div class="treatment_list 04">
+              <div class="sub_banner">
+                  <h1>응급중환자의료센터</h1>
+                  <p>해마루 이차진료 동물병원의 응급중환자의료센터는 2008년부터 국내 최초로 전담 전문 인력이 상주하는 중환자 집중 치료와 응급 진료를 시작하였으며, 현재까지도 최고의 수준을 유지하면서 개와 고양이의 중환자 집중 치료와 응급 진료의 표준을 만들어가고 있습니다. 응급중환자의료센터는 4조 2교대 시스템을 도입하여, 한 조당 응급중환자의료 전담수의사 1~3명, 수련 수의사 2명, 테크니션 4~6명으로 구성된 7~10명이 한 팀으로 24시간 365일 동일한 수준의 인력과 의료서비스가 가능하도록 조직되어 철저한 환자 관리와 응급 대응 체계를 유지하고 있습니다.</p>
+              </div>
+              <ul class="list">
+                  <li class="s_slider 20">
+                      <img src="./images/emergency1.jpg" alt="">
+                      <h1>중환자 집중치료</h1>
+                      <div class="hover">
+                          <div>
+                              <p>+</p>
+                          </div>
+                      </div>
+                  </li>
+                  <li class="s_slider 21">
+                      <img src="./images/emergency2.jpg" alt="">
+                      <h1>응급의료센터</h1>
+                      <div class="hover">
+                          <div>
+                              <p>+</p>
+                          </div>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // 서브 페이지에서 메인의 파라메타를 받음
+        var val = location.href.substr(
+            location.href.lastIndexOf('=') + 1
+        );
+        // val으로 텝메뉴 값 지정
+        console.log('val : ' + val);
+
+        $('.sub_menu2 > ul > li').eq(val).trigger('click');
+
+    });
+  </script>
+    
+    <!-- 4페이지 -->
+    <section id="s4" class="section">
+      <!-- footer -->
+      <footer id="main_footer">
+        <div class="container">
+          <h2 id="footer_logo">
+            <img src="./imgs/foot_logo.png" alt="해마루푸터로고">
+          </h2>
+          <div id="footer_info">
+            <a href="#"><strong>개인정보취급방침</strong></a>
+            <span>|</span>
+            <a href="#">이메일무단수집거부</a>
+            <address>경기도 성남시 분당구 황새울로 319번길 수의과학회관 1~4층</address>
+            <p>Tel. 031 ) 781 - 2992<span>|</span>Fax. 031 ) 781 - 2993</p>
+            <p>E-mail. help@haemaru.co.kr</p>
+            <p>&copy; 2016 HAEMARU Referral Animal Hospital All rights Reserved.</p>
+          </div>
+          <div id="sns_icons">
+            <a href="#"><img src="./imgs/FA.png" alt="페이스북"></a>
+            <a href="#"><img src="./imgs/IN.png" alt="트위터"></a>
+            <a href="#"><img src="./imgs/TW.png" alt="인스타그램"></a>
+          </div>
+        </div>
+      </footer>
+    </section>
+  
+
+  </body>
+</html>
