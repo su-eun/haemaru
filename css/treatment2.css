@@ -201,13 +201,15 @@
     font-size: 18px;
     color: #666;
   }
-  #util ul > li:last-child {
+  #category_btn {
     position: relative;
     top: 3px; left: 4px;
   }
-  #util ul > li:last-child > img:active {
+  #category_btn > img {
     transition-duration: 0.4s;
-    transform: rotate(360deg);
+  }
+  #category_btn > .deg {
+    transform: rotate(135deg);
   }
 
 /* 메인메뉴 */

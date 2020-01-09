@@ -8,6 +8,7 @@ $('body').imagesLoaded(function(){
   }
 
   $(function() {
+    
   // gnb 이벤트
   /* var link = document.querySelectorAll("#gnb a");
   for (let i = 0; i < link.length; i++) {
