@@ -1,0 +1,254 @@
+/* tab_style.css */
+
+.swiper-pagination-bullet {
+    display: none !important;
+}
+
+/* 헤더 */
+#gnb {
+    display: none;
+}
+#header_wrap {
+    position: fixed;
+    background: #fff !important; 
+    z-index: 98;
+    width: 100%;
+    height: 60px;
+    transition-duration: 0.5s;
+    /* outline: 1px solid red; */
+}
+#logo {
+    text-align: left;
+    margin-top:7px;
+    margin-left:17px;
+}
+#logo img {
+    height: 30px;
+}
+#util {
+    position: absolute;
+    right:2%; top:13.5px;
+}
+#util ul > li:first-child {
+    padding-right:3px;
+}
+#util ul > li {
+    display: inline-block;
+    padding-right: 11px;
+} 
+#util ul > li > a {
+    font-size: 14px;
+    color: #666;
+}
+#category_btn {
+    position: relative;
+    top: 4px; left: 4px;
+}
+
+/* 섹션 */
+/* s1 */
+#s1 {
+    text-align: center;
+}
+.title > p {
+    font-size: 8vw;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 1px 2px 3px rgba(0,0,0,0.2);
+}
+.title > p > span {
+    color: #f15b22;
+}
+.title > p:first-child {
+    font-size: 15vw;
+}
+
+/* s2 */
+#s2 {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+#s2_info {
+    margin-top: 60px;
+    padding-bottom: 10px;
+}
+#s2_info .left {
+    margin-top: 20%
+}
+#s2_info .right {
+    margin-top: 5px;
+    /* margin-bottom: 30px; */
+}
+#s2_info .right > a {
+    text-shadow: 1px 2px 2px rgba(0,0,0,0.4);
+}
+.arrow {
+    margin-left: 10px;
+    font-size: 16px;
+}
+#s2_menu > ul {
+    /* outline: 1px solid yellow; */
+    width: 220px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#s2_menu > ul > li {
+    flex: 1;
+    padding: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+}
+#s2_menu > ul > li img {
+    height: 60px;
+}
+#s2_24h > a {
+    text-shadow: 1px 2px 2px rgba(0,0,0,0.2);
+}
+
+/* s3 */
+#s3 > .container {
+    height: 88%;
+    text-align: center;
+    color: #fff;
+    /* flex-direction: column; */
+    display: block;
+}
+#s3_box2 > .menu1 > a > img {
+    width: 100px;
+}
+#s3_box2 > .menu1 > a:first-child > img, 
+#s3_box2 > .menu1 > a:nth-child(3) > img {
+    margin-right: 3px;
+} 
+#s3_box1 > .t_left {
+    display: none;
+}
+#s3_box1 > .t_right {
+    display: none;
+}
+#s3_box2 {
+    margin: 0 auto;
+    width: 285px;
+    color:#318fd9;
+    background: rgba(255,255,255,0.9);
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin-top: 55px;
+    margin-bottom: 30px;
+}
+#s3_box2 > h3 {
+    margin-bottom: 10px;
+}
+.s3_right {
+    /* outline: 1px solid green; */
+    margin-bottom: 6%;
+}
+#s3_menu2 {
+    margin-bottom: 120px;
+}
+
+/* 박스 공통 */
+.menubox > div {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 285px;
+    height: 35px;
+    border: 3px solid #fff;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.menubox > div > h4 {
+    flex: 3;
+    padding-left: 60px;
+}
+.menubox > div > span {
+    flex: 1;
+    font-weight: bold;
+}
+
+/* s4 */
+#s4 > .container {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 35px;
+}
+#sub_banner {
+    display: none;
+}
+#s4_notice {
+    background: rgba(255,255,255,0.9);
+    /* flex: 0 0 287px; */
+    width: 287px;
+    height: 225px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    word-break: keep-all;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 45px;
+}
+#s4_notice > h2 {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#s4_notice a {
+    font-size: 12px;
+    color: #666;
+  } 
+#s4_notice span {
+    display: none;
+}
+#s4_menu {
+    padding-top: 3%;
+}
+#s4 .menubox > div > h4 {
+    padding-left: 110px;
+}
+
+/* footer */
+#main_footer > .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#footer_logo img {
+    display: none;
+}
+#footer_info {
+    margin-top: 15px;
+}
+address {
+    margin-top: 10px;
+  }
+#sns_icons {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+#sns_icons a {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+#footer_info {
+    color: #dfdfdf;
+    font-size: 10px;
+    line-height: 1.6em;
+}
+#tawkchat-minified-box,
+.round #tawkchat-minified-wrapper {
+    display: none !important; 
+    overflow: hidden !important;
+    height: 0 !important;
+
+} 

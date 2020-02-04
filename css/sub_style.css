@@ -25,12 +25,15 @@ body {
 #category {
   position: fixed;
   z-index: 99;
-  width: 82%; height: 400%;
+  width: 82%; height: 100%;
+  overflow: scroll;
   background: #fff;
-  /* display: none; */
   left: -100%;
   opacity: 0;
   transition-duration: 0.5s;
+}
+#category::-webkit-scrollbar { 
+  display: none; 
 }
 #category.ct_show {
   opacity: 1;
@@ -40,16 +43,11 @@ body {
 .nav_container {
   display: flex;
   flex-wrap: wrap;
-  /* flex-direction: column; */
   justify-content: flex-end;
-  /* align-items: flex-end; */
   
 }
 .nav_container > dl {
   flex-basis: 300px;
-  /* height: 14.28%; */
-  /* flex: 0 0 20%; */
-  /* outline: 1px solid red; */
   text-align: center;
   margin: 30px 50px 50px 50px;
 }
@@ -71,7 +69,7 @@ body {
 
 /* 메인메뉴 */
 #header_wrap {
-  background: rgba(255,255,255,1);
+  background: rgba(255,255,255,1) !important;
 }
 #util {
   position: absolute;
@@ -107,14 +105,14 @@ address {
   margin-top: 25px;
 }
 #main_footer {
-  height: 16%;
+  height: 20%;
   background: #282828;
   border-top: 3px solid rgba(255,255,255,0.8);
 }
 #main_footer > .container {
   margin: 0 auto;
   margin-top: 30px;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   width: 80%;
   display: flex;
   justify-content: space-between;
@@ -153,7 +151,7 @@ address {
 /* 온라인 상담 페이지 */
 .online_container {
   width: 100%;
-  height: 84%;
+  height: 80%;
 }
 #online {
   width: 100%;

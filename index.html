@@ -8,15 +8,20 @@
     <!-- noto sans 웹폰트 -->
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <!-- 공통css -->
-    <link rel="stylesheet" href="./css/main_style.css" />
+    <link rel="stylesheet" href="./css/main_style.css">
     <!-- pc css -->
-    <link rel="stylesheet" href="./css/pc_style.css">
+    <link rel="stylesheet" href="./css/pc_style.css" media="screen and (min-width:1200px)">
     <!-- tab css -->
-    <!-- mobile css -->
+    <link rel="stylesheet" href="./css/tab_style.css" media="(min-width:415px) and (max-width:1199px)">
+    <!-- phone css -->
+    <link rel="stylesheet" href="./css/phone_style.css" media="screen and (max-width:414px)">
     <!-- 제이쿼리 -->
     <script src="./js/jquery-3.4.1.min.js"></script>
     <!-- 이미지로드 -->
     <script src="./js/imagesloaded.pkgd.min.js"></script>
+    <!-- swiper 플러그인 -->
+    <link rel="stylesheet" href="./js//swiper.min.css">
+    <script src="./js/swiper.min.js"></script>
     <!-- 사용자 js -->
     <script src="./js/main.js"></script>
     <!-- 카테고리 js -->
@@ -66,7 +71,7 @@
                 <dd><a href="#">소동물임상의학연구소</a></dd>
               </dl>
           </div>
-      </nav>
+      </nav><!-- end category -->
       <div id="header_wrap">
         <h1 id="logo">
           <a href="./index.html">
@@ -75,38 +80,38 @@
         </h1>
         <nav id="gnb">
           <ul class="depth1">
-            <li><a href="#">진료예약/상담</a>
+            <li><a href="#s2">진료예약/상담</a>
               <ul class="depth2">
-                <li><a href="#">예약안내</a></li>
-                <li><a href="#">진료예약</a></li>
-                <li><a href="#">응급진료안내</a></li>
+                <li><a href="./treatment1.html">예약안내</a></li>
+                <li><a href="./treatment1.html">진료예약</a></li>
+                <li><a href="./online_talk.html">응급진료안내</a></li>
                 <li><a href="./online_talk.html">온라인상담</a></li>
               </ul>
             </li>
-            <li><a href="#">진료안내</a>
+            <li><a href="./treatment1.html">진료안내</a>
               <ul class="depth2">
                 <li><a href="./treatment1.html">진료시간</a></li>
                 <li><a href="./treatment2.html">진료과목</a></li>
               </ul>
             </li>
-            <li><a href="#">의료진</a>
+            <li><a href="./treatment2.html">의료진</a>
               <ul class="depth2">
-                <li><a href="#">의료진 소개</a></li>
+                <li><a href="./treatment2.html">의료진 소개</a></li>
               </ul>
             </li>
-            <li><a href="#">병원소개</a>
+            <li><a href="#s3">병원소개</a>
               <ul class="depth2">
                 <li><a href="#s3">병원소개</a></li>
-                <li><a href="#">구조 및 시설</a></li>
-                <li><a href="#">의료기기소개</a></li>
-                <li><a href="#">비지팅 신청안내</a></li>
+                <li><a href="./treatment2.html">구조 및 시설</a></li>
+                <li><a href="./treatment2.html">의료기기소개</a></li>
+                <li><a href="./treatment2.html">비지팅 신청안내</a></li>
               </ul>
             </li>
-            <li><a href="#">커뮤니티</a>
+            <li><a href="./online_talk.html">커뮤니티</a>
               <ul class="depth2">
-                <li><a href="#">병원행사</a></li>
-                <li><a href="#">공지사항</a></li>
-                <li><a href="#">FAQ</a></li>
+                <li><a href="./online_talk.html">병원행사</a></li>
+                <li><a href="./online_talk.html">공지사항</a></li>
+                <li><a href="./online_talk.html">FAQ</a></li>
               </ul>
             </li>
             <li><a href="./map.html">오시는길</a>
@@ -114,11 +119,11 @@
                 <li><a href="./map.html">오시는길</a></li>
               </ul>
             </li>
-            <li><a href="#">HAEMARU</a>
+            <li><a href="./index.html">HAEMARU</a>
               <ul class="depth2">
-                <li><a href="#">이차진료동물병원</a></li>
-                <li><a href="#">해마루솔루션</a></li>
-                <li><a href="#">소동물임상의학연구소</a></li>
+                <li><a href="./index.html">이차진료동물병원</a></li>
+                <li><a href="./index.html">해마루솔루션</a></li>
+                <li><a href="./index.html">소동물임상의학연구소</a></li>
               </ul>
             </li>
           </ul><!-- end depth -->
@@ -134,192 +139,178 @@
       </div>
     </header>
 
-    <nav id="pager">
-      <div id="box"></div>
-      <ul>
-        <li class="on"><a href="#s1">1</a></li>
-        <li><a href="#s2">2</a></li>
-        <li><a href="#s3">3</a></li>
-        <li><a href="#s4">4</a></li>
-      </ul>
-    </nav>
-    <!-- 1페이지 -->
-    <section id="s1" class="section">
-      <div class="title">
-        <p>2020년</p>
-        <p>새해와 새롭게 단장한</p>
-        <p><span>해마루 동물병원</span>입니다</p>
-      </div>
-      <div class="bg_slide">
-        <div class="show">bg1</div>
-        <div>bg2</div>
-        <div>bg3</div>
-      </div>
-    </section>
-
-    <!-- 2페이지 -->
-    <section id="s2" class="section">
-      <!-- <div class="container"> -->
-        <div class="s2_bg">
-          <div id="s2_info">
-            <div class="left">
-              <p>평일, 토요일: AM 10:00 ~ PM 6:00</p>
-              <p>일요일, 공휴일: 휴무</p>
-              <p>문의전화: 031-781-2992</p>
-            </div>
-            <div class="right">
-              <a href="#">접수절차 안내<span class="arrow">▶</span></a>
-            </div>
+    <!-- main -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <!-- 1페이지 -->
+        <section id="s1" class="swiper-slide">
+          <div class="title">
+            <p>2020년</p>
+            <p>새해와 새롭게 단장한</p>
+            <p><span>해마루 동물병원</span>입니다</p>
           </div>
-          <div id="s2_menu">
-            <ul>
-              <li>
-                <a href="#"><img src="./imgs/call-24px.png" alt="진료예약"></a>
-                <p>진료예약</p>
-              </li>
-              <li>
-                <a href="./online_talk.html"><img src="./imgs/record_voice_over-24px.png" alt="온라인상담"></a>
-                <p>온라인상담</p>
-              </li>
-              <li>
-                <a href="./treatment2.html"><img src="./imgs/assignment-24px.png" alt="진료과목"></a>
-                <p>진료과목</p>
-              </li>
-              <li>
-                <a href="./map.html"><img src="./imgs/beenhere-24px.png" alt="오시는길"></a>
-                <p>오시는 길</p>
-              </li>
-            </ul>
+          <div class="bg_slide">
+            <div class="show">bg1</div>
+            <div>bg2</div>
+            <div>bg3</div>
           </div>
-        </div>
-        <div id="s2_24h">
-          <h2>응급진료 연중 24시간</h2>
-          <a href="#">응급진료안내<span class="arrow">▶</span></a>
-        </div>
-      <!-- </div> -->
-    </section>
+        </section>
 
-    <!-- 3페이지 -->
-    <section id="s3" class="section">
-      <div class="container">
-        <div class="s3_left">
-          <div id="s3_box1">
-            <div class="t_left">
-              <h2>해마루</h2>
-              <h3>이차진료병원</h3>
+        <!-- 2페이지 -->
+        <section id="s2" class="swiper-slide">
+            <div class="s2_bg">
+              <div id="s2_info">
+                <div class="left">
+                  <p>평일, 토요일: AM 10:00 ~ PM 6:00</p>
+                  <p>일요일, 공휴일: 휴무</p>
+                  <p>문의전화: 031-781-2992</p>
+                </div>
+                <div class="right">
+                  <a href="#">접수절차 안내<span class="arrow">▶</span></a>
+                </div>
+              </div>
+              <div id="s2_menu">
+                <ul>
+                  <li>
+                    <a href="#"><img src="./imgs/call-24px.png" alt="진료예약"></a>
+                    <p>진료예약</p>
+                  </li>
+                  <li>
+                    <a href="./online_talk.html"><img src="./imgs/record_voice_over-24px.png" alt="온라인상담"></a>
+                    <p>온라인상담</p>
+                  </li>
+                  <li>
+                    <a href="./treatment2.html"><img src="./imgs/assignment-24px.png" alt="진료과목"></a>
+                    <p>진료과목</p>
+                  </li>
+                  <li>
+                    <a href="./map.html"><img src="./imgs/beenhere-24px.png" alt="오시는길"></a>
+                    <p>오시는 길</p>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="t_right">
-              <p>고객에게 '행복'을<br>
-                직원에게 '즐거움'을<br>
-                반려동물에게 '최상의 진료서비스'를
-              </p>
+            <div id="s2_24h">
+              <h2>응급진료 연중 24시간</h2>
+              <a href="#">응급진료안내<span class="arrow">▶</span></a>
             </div>
-          </div>
-          <div id="s3_box2">
-            <h3>진료<span>과목</span></h3>
-            <div class="menu1">
-              <a href="./treatment2.html" onclick="setChildValue(0);return false;"><img src="./imgs/internal.png" alt="내과"></a>
-              <a href="./treatment2.html" onclick="setChildValue(1);return false;"><img src="./imgs/surgery.png" alt="외과"></a>
-              <a href="./treatment2.html" onclick="setChildValue(2);return false;"><img src="./imgs/image_d.png" alt="영상의학과"></a>
-              <a href="./treatment2.html" onclick="setChildValue(3);return false;"><img src="./imgs/emergency.png" alt="응급중환자 의료센터"></a>
-            </div>
-          </div>
-        </div>
+        </section>
 
-        <!-- 페이지이동스크립트 -->
-        <script>
-          function setChildValue(index) {
-            // 페이지 이동
-            window.location.href = "./treatment2.html?index=" + index;
-            return false;
-          }
-        </script><!-- script end -->
-
-        <div id="s3_box3">
-          <a id="s3_menu2" class="menubox" href="#">
-            <div>
-                <h4>시설안내</h4>
-                <span>+</span>
+        <!-- 3페이지 -->
+        <section id="s3" class="swiper-slide">
+          <div class="container">
+            <div class="s3_left">
+              <div id="s3_box1">
+                <div class="t_left">
+                  <h2>해마루</h2>
+                  <h3>이차진료병원</h3>
+                </div>
+                <div class="t_right">
+                  <p>고객에게 '행복'을<br>
+                    직원에게 '즐거움'을<br>
+                    반려동물에게 '최상의 진료서비스'를
+                  </p>
+                </div>
+              </div>
+              <div id="s3_box2">
+                <h3>진료과목</h3>
+                <div class="menu1">
+                  <a href="./treatment2.html" onclick="setChildValue(0);return false;"><img src="./imgs/internal.png" alt="내과"></a>
+                  <a href="./treatment2.html" onclick="setChildValue(1);return false;"><img src="./imgs/surgery.png" alt="외과"></a>
+                  <a href="./treatment2.html" onclick="setChildValue(2);return false;"><img src="./imgs/image_d.png" alt="영상의학과"></a>
+                  <a href="./treatment2.html" onclick="setChildValue(3);return false;"><img src="./imgs/emergency.png" alt="응급중환자 의료센터"></a>
+                </div>
+              </div>
             </div>
-          </a>
-          <a  id="s3_menu3" class="menubox" href="#">
-            <div>
-                <h4>의료진소개</h4>
-                <span>+</span>
-            </div>
-          </a>
-        </div>
-      </div><!-- end container -->
-    </section>
 
-    <!-- 4페이지 -->
-    <section id="s4" class="section">
-        <div id="sub_banner">
-          <img src="./imgs/sub_banner.jpg" alt="4페이지서브배너">
-        </div>
-        <div class="container">
-        <div id="s4_notice">
-          <h2>공지사항</h2>
-          <ul>
-            <li>
-              <a href="#">[소식] 국내 동물병원 최초 프리미엄급 초음파기 도입</a><span>2019-11-15</span>
-            </li>
-            <li>
-              <a href="#">[안내] 멍냥응급키트 출시!!</a><span>2019-09-04</span>
-            </li>
-            <li>
-              <a href="#">[알림] 해마루 X 말순이네펫택시 제휴 도입</a><span>2019-07-22</span>
-            </li>
-            <li>
-              <a href="#">[칼럼] 반려동물 건강이야기 - 촌각을 다투는 응급상황, 동물병원은 어떻게 대처할까?</a><span>2020-01-02</span>
-            </li>
-          </ul>
-        </div>
-        <div id="s4_menu" >
-          <a class="menubox" href="#">
-            <div>
-              <h4>수술사례</h4>
-              <span>+</span>
-            </div>
-          </a>
-        </div>
-      </div>
-      <!-- footer -->
-      <footer id="main_footer">
-        <div class="container">
-          <h2 id="footer_logo">
-            <img src="./imgs/foot_logo.png" alt="해마루푸터로고">
-          </h2>
-          <div id="footer_info">
-            <a href="#"><strong>개인정보취급방침</strong></a>
-            <span>|</span>
-            <a href="#">이메일무단수집거부</a>
-            <address>경기도 성남시 분당구 황새울로 319번길 수의과학회관 1~4층</address>
-            <p>Tel. 031 ) 781 - 2992<span>|</span>Fax. 031 ) 781 - 2993</p>
-            <p>E-mail. help@haemaru.co.kr</p>
-            <p>&copy; 2016 HAEMARU Referral Animal Hospital All rights Reserved.</p>
-          </div>
-          <div id="sns_icons">
-            <a href="#"><img src="./imgs/FA.png" alt="페이스북"></a>
-            <a href="#"><img src="./imgs/IN.png" alt="트위터"></a>
-            <a href="#"><img src="./imgs/TW.png" alt="인스타그램"></a>
-          </div>
-        </div>
-      </footer>
-    </section>
-  <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-  (function(){
-  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-  s1.async=true;
-  s1.src='https://embed.tawk.to/5e13d7f927773e0d832c2bda/default';
-  s1.charset='UTF-8';
-  s1.setAttribute('crossorigin','*');
-  s0.parentNode.insertBefore(s1,s0);
-  })();
-  </script>
-  <!--End of Tawk.to Script-->
+            <!-- 페이지이동스크립트 -->
+            <script>
+              function setChildValue(index) {
+                // 페이지 이동
+                window.location.href = "./treatment2.html?index=" + index;
+                return false;
+              }
+            </script><!-- script end -->
 
+          <div class="s3_right">
+              <div id="s3_box3">
+                <a id="s3_menu2" class="menubox" href="#">
+                  <div>
+                      <h4>시설안내</h4>
+                      <span>+</span>
+                  </div>
+                </a>
+                <a  id="s3_menu3" class="menubox" href="#">
+                  <div>
+                      <h4>의료진소개</h4>
+                      <span>+</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div><!-- end container -->
+        </section>
+
+        <!-- 4페이지 -->
+        <section id="s4" class="swiper-slide">
+            <div id="sub_banner">
+              <img src="./imgs/sub_banner.jpg" alt="4페이지서브배너">
+            </div>
+            <div class="container">
+                <div id="s4_notice">
+                  <h2>공지사항</h2>
+                  <ul>
+                    <li>
+                      <a href="#">[소식] 국내 동물병원 최초 프리미엄급 초음파기 도입</a><span>2019-11-15</span>
+                    </li>
+                    <li>
+                      <a href="#">[안내] 멍냥응급키트 출시!!</a><span>2019-09-04</span>
+                    </li>
+                    <li>
+                      <a href="#">[알림] 해마루 X 말순이네펫택시 제휴 도입</a><span>2019-07-22</span>
+                    </li>
+                    <li>
+                      <a href="#">[칼럼] 반려동물 건강이야기 - 촌각을 다투는 응급상황, 동물병원은 어떻게 대처할까?</a><span>2020-01-02</span>
+                    </li>
+                  </ul>
+                </div>
+                <div id="s4_menu" >
+                  <a class="menubox" href="#">
+                    <div>
+                      <h4>수술사례</h4>
+                      <span>+</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+          <!-- footer -->
+          <footer id="main_footer">
+            <div class="container">
+              <h2 id="footer_logo">
+                <img src="./imgs/foot_logo.png" alt="해마루푸터로고">
+              </h2>
+              <div id="footer_info">
+                <a href="#"><strong>개인정보취급방침</strong></a>
+                <span>|</span>
+                <a href="#">이메일무단수집거부</a>
+                <address>경기도 성남시 분당구 황새울로 319번길 수의과학회관 1~4층</address>
+                <p>Tel. 031 ) 781 - 2992<span>|</span>Fax. 031 ) 781 - 2993</p>
+                <p>E-mail. help @ haemaru.co.kr</p>
+                <p>&copy; 2016 HAEMARU Referral Animal Hospital 
+                  <span class="enter"><br></span>
+                  All rights Reserved.</p>
+              </div>
+              <div id="sns_icons">
+                <a href="#"><img src="./imgs/FA.png" alt="페이스북"></a>
+                <a href="#"><img src="./imgs/IN.png" alt="트위터"></a>
+                <a href="#"><img src="./imgs/TW.png" alt="인스타그램"></a>
+              </div>
+            </div>
+          </footer>
+        </section>
+      </div><!-- end sw-wrapper -->
+       <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div><!-- end swiper-container -->
   </body>
 </html>

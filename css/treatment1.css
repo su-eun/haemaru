@@ -13,6 +13,9 @@ ul, ol { list-style-type: none;}
 body {
     background: #f15a21;
 }
+body::-webkit-scrollbar { 
+  display: none; 
+}
 .container {
     background: #fff;
     margin: 0 auto;
